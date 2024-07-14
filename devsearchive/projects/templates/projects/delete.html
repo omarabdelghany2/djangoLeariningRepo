@@ -1,0 +1,8 @@
+{% block content %}
+<form method="POST" action="">
+    {% csrf_token %}
+    <p>ARE YOU SURE TO DELETE THE "{{object}}"?</p>
+    <input type="Submit" value="Submit" />
+</form>
+
+{% endblock content %} 
